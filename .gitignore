@@ -1,0 +1,15 @@
+# Environnement virtuel
+venv/
+env/
+.env
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Données (Optionnel : si vos PDF sont trop lourds)
+# data/raw/*.pdf
+
+# Fichiers système
+.DS_Store
+Thumbs.db
