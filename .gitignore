@@ -1,15 +1,51 @@
-# Environnement virtuel
-venv/
-env/
+# --- 1. SÉCURITÉ & SECRETS (CRITIQUE) ---
+# Ne jamais envoyer ces fichiers sur GitHub car ils contiennent vos clés API
 .env
+.streamlit/secrets.toml
+**/*.toml
+!/.streamlit/config.toml  # On autorise la config, mais pas les secrets
 
-# Cache Python
+# --- 2. DONNÉES LOURDES & GÉNÉRÉES (RAG) ---
+# La base de données vectorielle (FAISS) est recréée par ingest.py, inutile de l'envoyer
+vectorstore/
+db_faiss/
+faiss_index/
+
+# Vos documents PDF sources (Éviter d'encombrer le repo si ce sont des fichiers lourds)
+# Vous pouvez commenter ces lignes si vous voulez partager les PDF
+data/*.pdf
+data/raw/*.pdf
+
+# --- 3. PYTHON & ENVIRONNEMENT ---
+# Bytecode compilé (fichiers inutiles)
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Données (Optionnel : si vos PDF sont trop lourds)
-# data/raw/*.pdf
+# Environnements virtuels (votre dossier d'installation des librairies)
+venv/
+.venv/
+env/
+.env/
 
-# Fichiers système
+# --- 4. STREAMLIT & CACHE ---
+# Fichiers temporaires de Streamlit
+.streamlit/config.toml.backup
+
+# --- 5. IDE & SYSTÈME ---
+# Fichiers de configuration de vos éditeurs de code (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+*.swp
+
+# Fichiers système Mac/Windows
 .DS_Store
 Thumbs.db
+
+.Notebooks/test.ipynb
+
+.chat_history/
+
+app0.py
+app2.py
+app3.py

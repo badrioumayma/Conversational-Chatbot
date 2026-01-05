@@ -1,0 +1,24 @@
+[
+    {
+        "role": "user",
+        "content": "Tell me about scholarships."
+    },
+    {
+        "role": "user",
+        "content": "tell me about qatar  univercity"
+    },
+    {
+        "role": "assistant",
+        "content": "**Tuition Fees at Qatar University**\n\nQatar University offers various tuition fees for different programs and colleges. Here are the costs per credit hour:\n\n* **Undergraduate and Foundation Program students admitted starting from Fall 2015 to Summer**:\n\t+ Art, Education, Law, Sharia and Islamic Studies: 800 QR per credit hour\n\t+ Business and Economics, Foundation Program, Sciences, Health Sciences: 900 QR per credit hour\n\t+ Engineering: 1000 QR per credit hour\n\t+ Pharmacy: 1000 QR per credit hour\n\t+ Arabic for Non-Native Speaker Program: 1000 QR per credit hour\n\n**College of Medicine and Dental Medicine Tuition Fees per Academic Semester**\n\n* **First Year**: Tuition fees will depend on the courses registered by the student in different colleges.\n* **Second Year**: 60,000 QR per year\n* **Third Year**: 60,000 QR per year\n\n**Annual Tuition Fees per Year**\n\n* Third Year: 78,000 QR\n* Fourth Year: 109,500 QR\n* Fifth Year: 133,400 QR\n* Sixth Year: 131,100 QR ",
+        "sources": "Qatar_univercity.pdf"
+    },
+    {
+        "role": "user",
+        "content": "how can i apply for it"
+    },
+    {
+        "role": "assistant",
+        "content": "**Application Process for Qatar University**\n\nTo apply for Qatar University, follow these steps:\n\n*   **Check Eligibility**: Ensure you meet the admission requirements, which include:\n    *   A high school diploma or equivalent\n    *   A minimum GPA of 2.0\n    *   English proficiency (TOEFL or IELTS)\n    *   Other program-specific requirements\n*   **Choose a Program**: Select a program that suits your interests and qualifications. Qatar University offers various undergraduate and graduate programs.\n*   **Gather Required Documents**:\n    *   Passport\n    *   High school diploma or equivalent\n    *   Transcripts\n    *   English proficiency test scores (TOEFL or IELTS)\n    *   Other program-specific documents\n*   **Submit an Online Application**: Visit the Qatar University website ([www.qu.edu.qa](http://www.qu.edu.qa)) and submit an online application.\n*   **Pay the Application Fee**: Pay the application fee, which is 100 QR for Qatari students and 200 QR for international students.\n*   **Wait for Review**: Qatar University will review your application and may request additional documents or an interview.\n*   **Receive Admission Decision**: You will receive an admission decision via email or post.\n\n**Additional Requirements for International Students**\n\n*   **Visa Application**: International students must apply for a student visa at the Qatari embassy or consulate in their home country.\n*   **Health Insurance**: International students must purchase health insurance that meets Qatar University's requirements.\n*   **Language Proficiency**: International students may be required to take an English proficiency test (TOEFL or IELTS) or attend an English language course.\n\n**Deadlines**\n\n*   **Undergraduate Programs**: Typically, the application deadline is in February for the fall semester and in September for the spring semester.\n*   **Graduate Programs**: The application deadline varies depending on the program and semester.\n\n**Contact Information**\n\nFor more information, contact Qatar University's admissions office:\n\nPhone: +974 4403 0000\nEmail: [admissions@qu.edu.qa](mailto:admissions@qu.edu.qa)\nWebsite: [www.qu.edu.qa](http://www.qu.edu.qa) ",
+        "sources": "Qatar_univercity.pdf"
+    }
+]

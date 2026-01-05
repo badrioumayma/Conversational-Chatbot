@@ -1,0 +1,11 @@
+[
+    {
+        "role": "user",
+        "content": "hello  tell me about   qatar univercity"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! How can I help you with your university application today?\n\nHowever, I must note that there seems to be a slight typo in your question. I believe you meant to ask about \"Qatar University\".\n\nQatar University is a public research university located in Doha, Qatar. Here are some key facts about the university:\n\n**About Qatar University:**\n\n* Founded in 1973\n* Accredited by the Commission for Academic Accreditation (CAA) in the UAE\n* Recognized by the Ministry of Education and Higher Education in Qatar\n* Offers a wide range of undergraduate and graduate programs in various fields, including engineering, business, health sciences, and humanities\n\n**Academic Programs:**\n\n* Qatar University offers over 80 undergraduate and graduate programs\n* Programs are taught in English, with some courses offered in Arabic\n* The university has a strong focus on research and innovation, with many programs offering research opportunities\n\n**Campus and Facilities:**\n\n* The university's campus is located in Doha, Qatar, and spans over 7,000 square meters\n* The campus features state-of-the-art facilities, including libraries, laboratories, and recreational centers\n* Qatar University has a strong commitment to sustainability and has implemented various initiatives to reduce its environmental impact\n\n**Student Life:**\n\n* Qatar University has a diverse student body, with students from over 50 countries\n* The university offers a range of extracurricular activities, including sports, cultural events, and volunteer opportunities\n* Qatar University has a strong focus on community engagement and has partnerships with various organizations and businesses in Qatar\n\nI hope this information helps! If you have any specific questions or would like more information, please let me know.",
+        "sources": "Qatar_univercity.pdf"
+    }
+]

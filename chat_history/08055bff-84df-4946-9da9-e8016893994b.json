@@ -1,0 +1,20 @@
+[
+    {
+        "role": "user",
+        "content": "tell me about erasmus"
+    },
+    {
+        "role": "assistant",
+        "content": "Unfortunately, I cannot find any information about the Erasmus program in the provided context. The text appears to be about a conference or event at the Université Hassan II de Casablanca, discussing various topics such as hygiene, environment, and quality assurance.\n\nHowever, I can tell you that the Erasmus program is a European Union program that allows students to study abroad in Europe for a semester or academic year. If you are interested in learning more about the Erasmus program, I would be happy to provide you with general information.\n\nWould you like me to provide you with general information about the Erasmus program? ",
+        "sources": "HASSAN2_UNIVERCITY.pdf"
+    },
+    {
+        "role": "user",
+        "content": "tell me about erasmus"
+    },
+    {
+        "role": "assistant",
+        "content": "Now that we have the correct information about the Erasmus program, I can provide you with a detailed overview.\n\n**What is the Erasmus program?**\n\nThe Erasmus program is a European Union program that allows students to study abroad in Europe for a semester or academic year. It was established in 1987 and is named after the Dutch philosopher Desiderius Erasmus.\n\n**Key facts about the Erasmus program:**\n\n* **Eligibility:** The program is open to students from EU countries who are enrolled in a higher education institution.\n* **Duration:** Students can participate in the program for a semester or academic year.\n* **Countries:** The program is available in over 30 European countries.\n* **Fields of study:** Students can choose from a wide range of fields, including arts, humanities, social sciences, natural sciences, and engineering.\n* **Language requirements:** Students are required to have a good command of the language of the host country.\n* **Financial support:** Students may be eligible for a grant or scholarship to cover living expenses and tuition fees.\n\n**Benefits of the Erasmus program:**\n\n* **Cultural exchange:** Students can experience a new culture and way of life.\n* **Language skills:** Students can improve their language skills and gain a deeper understanding of the host country's language and culture.\n* **Networking opportunities:** Students can connect with students and academics from other European countries.\n* **Career opportunities:** Students can gain international experience and enhance their employability.\n\n**How to participate in the Erasmus program:**\n\nIf you are interested in participating in the Erasmus program, you should contact your university's international office or a European student exchange organization for more information.\n\n**Additional information:**\n\n* The Erasmus program aims to promote student mobility, cultural understanding, and language skills among European students.\n* The program is funded by the European Union and is available to students from EU countries.\n* Students who participate in the Erasmus program can receive a grant or scholarship to cover living expenses and tuition fees.\n\nI hope this information helps you understand the Erasmus program better. If you have any further questions, feel free to ask!",
+        "sources": "Erasmus_Programme-Guide_EN.pdf"
+    }
+]
