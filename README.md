@@ -1,11 +1,98 @@
-🎓 Unibot Advisor : Assistant RAG UniversitaireRésumé : Unibot Advisor est un assistant virtuel intelligent capable de répondre aux questions sur les programmes universitaires grâce à une architecture RAG (Retrieval-Augmented Generation), s'appuyant exclusivement sur des documents officiels pour garantir des réponses vérifiables .📋 Contexte et ObjectifsL'objectif principal de ce projet est de résoudre la surcharge informationnelle dans le contexte académique . Le système permet de répondre à des questions complexes, telles que "Quelles sont les opportunités de carrière pour le programme X ?", en synthétisant l'information provenant de milliers de pages de documentation officielle .Fonctionnalités ClésArchitecture RAG Complète : Pipeline intégré de récupération et de génération de réponses .Sources Vérifiables : Chaque réponse fournie est accompagnée de citations précises tirées des documents sources .Mémoire Conversationnelle : Maintien de la cohérence et du contexte sur plusieurs tours de conversation grâce à un historique persistant .Interface Interactive : Interface utilisateur développée sous Streamlit incluant la gestion de l'historique de chat .🛠️ Architecture TechniqueLe projet suit une architecture modulaire séparant le moteur d'inférence, l'interface utilisateur et la gestion des données .ComposantTechnologieDétailsLangagePythonOrchestrationLangChainGestion du pipeline RAGVector StoreFAISSRecherche vectorielle locale optimiséeEmbeddingsSentence-TransformersModèle paraphrase-multilingual-MiniLM-L12-v2 (Support FR/EN, CPU friendly)FrontendStreamlitInterface Web interactiveInfrastructureDockerConteneurisation pour le déploiement📊 Pipeline de Données (Data Engineering)Le corpus documentaire a été constitué à partir de guides officiels d'universités internationales . Un script d'ingestion (ingest.py) gère le nettoyage et le découpage .Métriques du Corpus :ÉtapeVolumeDescriptionChargement6 866 pagesPages brutes chargées initialementNettoyage6 796 pagesPages utiles après suppression d'artefacts via RegExVectorisation33 923 chunksFragments générés pour l'index vectoriel🐳 Optimisation MLOpsUne attention particulière a été portée à l'industrialisation pour rendre le déploiement viable économiquement et techniquement.📉 Résultat de l'optimisationLe travail d'optimisation a permis une réduction drastique de la taille de l'image Docker, passant de 10.4 GB à 2.32 GB (réduction de 77%) .Stratégies AppliquéesRefonte du Dockerfile : Installation explicite de PyTorch en version CPU uniquement (sans CUDA) pour alléger les dépendances .Exclusions Strictes : Configuration du .dockerignore pour exclure l'environnement virtuel (venv), les caches (__pycache__) et les fichiers de développement .Nettoyage Post-Install : Utilisation d'une image de base légère et nettoyage des caches pip après installation .🚀 Installation et UtilisationOption 1 : Lancer avec Docker (Recommandé)Bash# Construire l'image optimisée
+# 🎓 Unibot Advisor – Assistant RAG Universitaire
+
+## 📝 Résumé
+**Unibot Advisor** est un assistant virtuel intelligent capable de répondre aux questions sur les programmes universitaires grâce à une architecture **RAG (Retrieval-Augmented Generation)**.  
+Il s’appuie exclusivement sur des **documents officiels**, garantissant des réponses **fiables, vérifiables et sourcées**.
+
+---
+
+## 📋 Contexte et Objectifs
+L’objectif principal de ce projet est de résoudre la **surcharge informationnelle dans le contexte académique**.  
+Le système permet de répondre à des questions complexes telles que :
+
+> *« Quelles sont les opportunités de carrière pour le programme X ? »*
+
+en synthétisant l’information issue de **milliers de pages de documentation universitaire officielle**.
+
+---
+
+## ✨ Fonctionnalités Clés
+
+- **Architecture RAG complète**  
+  Pipeline intégré de récupération documentaire et de génération de réponses.
+
+- **Sources vérifiables**  
+  Chaque réponse est accompagnée de **citations précises** provenant des documents sources.
+
+- **Mémoire conversationnelle**  
+  Maintien du contexte et de la cohérence sur plusieurs tours de conversation grâce à un **historique persistant**.
+
+- **Interface interactive**  
+  Application Web développée avec **Streamlit**, incluant la gestion de l’historique de chat.
+
+---
+
+## 🛠️ Architecture Technique
+
+Le projet adopte une architecture **modulaire**, séparant le moteur d’inférence, l’interface utilisateur et la gestion des données.
+
+| Composant        | Technologie              | Détails                                                                 |
+|------------------|--------------------------|-------------------------------------------------------------------------|
+| Langage          | Python                   | Langage principal                                                       |
+| Orchestration    | LangChain                | Gestion du pipeline RAG                                                  |
+| Vector Store     | FAISS                    | Recherche vectorielle locale optimisée                                   |
+| Embeddings       | Sentence-Transformers    | `paraphrase-multilingual-MiniLM-L12-v2` (FR/EN, CPU friendly)             |
+| Frontend         | Streamlit                | Interface Web interactive                                                |
+| Infrastructure   | Docker                   | Conteneurisation pour le déploiement                                     |
+
+---
+
+## 📊 Pipeline de Données (Data Engineering)
+
+Le corpus documentaire est constitué de **guides officiels d’universités internationales**.  
+Un script d’ingestion (`ingest.py`) gère le **nettoyage**, le **découpage** et la **vectorisation**.
+
+### 📈 Métriques du Corpus
+
+| Étape         | Volume       | Description                                                      |
+|--------------|--------------|------------------------------------------------------------------|
+| Chargement   | 6 866 pages  | Pages brutes chargées initialement                               |
+| Nettoyage    | 6 796 pages  | Pages utiles après suppression d’artefacts via RegEx             |
+| Vectorisation| 33 923 chunks| Fragments générés pour l’index vectoriel                          |
+
+---
+
+## 🐳 Optimisation MLOps
+
+Une attention particulière a été portée à l’**industrialisation** afin de garantir un déploiement **économique, léger et scalable**.
+
+### 📉 Résultat de l’optimisation
+- Taille de l’image Docker réduite de **10.4 GB à 2.32 GB**
+- **Réduction totale : 77 %**
+
+### 🧩 Stratégies Appliquées
+
+- **Refonte du Dockerfile**  
+  Installation explicite de **PyTorch CPU-only** (sans CUDA).
+
+- **Exclusions strictes**  
+  Configuration du `.dockerignore` pour exclure :
+  - `venv`
+  - `__pycache__`
+  - fichiers de développement
+
+- **Nettoyage post-installation**  
+  Utilisation d’une image de base légère et suppression des caches `pip`.
+
+---
+
+## 🚀 Installation et Utilisation
+
+### 🔹 Option 1 : Lancer avec Docker (Recommandé)
+
+```bash
+# Construire l'image optimisée
 docker build -t unibot-advisor .
 
 # Lancer le conteneur sur le port 8501
 docker run -p 8501:8501 unibot-advisor
-Option 2 : Développement LocalPrérequis : Python 3.9+Bash# 1. Installer les dépendances
-pip install -r requirements.txt
-
-# 2. Lancer l'application Streamlit
-streamlit run app.py
-🔮 Perspectives d'ÉvolutionL'architecture modulaire permet d'envisager les évolutions suivantes :🚀 LLMs Avancés : Intégration de modèles plus puissants comme GPT-4, Mistral ou Claude .🗣️ Vocal : Ajout d'une interface vocale pour l'accessibilité .🖼️ Multimodal : Prise en charge des images et des tableaux dans les documents .🔌 API : Exposition du service via une API REST pour intégration externe .
