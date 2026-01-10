@@ -89,14 +89,3 @@ Pour des raisons de sécurité, la clé API n'est pas incluse dans l'image. Vous
 
 ```bash
 docker run -p 8501:8501 -e GROQ_API_KEY="gsk_votre_cle_secrete_ici" unibot-advisor:final
-## 🚀 Installation et Utilisation
-
----
-### 🔹 Option 1 : Lancer avec Docker (Recommandé)
-
-```bash
-# Construire l'image
-docker build -t unibot-advisor .
-
-# Lancer l'application
-docker run -p 8501:8501 unibot-advisor
